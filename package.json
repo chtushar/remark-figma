@@ -1,0 +1,42 @@
+{
+  "name": "remark-figma",
+  "version": "0.0.1",
+  "description": "Remark plugin to convert valid Figma links in your markdown into Figma embed",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc",
+    "build": "npm run typecheck && rollup -c",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chtushar/remark-figma.git"
+  },
+  "author": "Tushar Choudhari<https://github.com/chtushar>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chtushar/remark-figma/issues"
+  },
+  "homepage": "https://github.com/chtushar/remark-figma#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "remark": "^14.0.2",
+    "rollup": "2.77.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "ts-jest": "^28.0.6",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "mdast-util-find-and-replace": "^2.2.1",
+    "unist-builder": "^3.0.0"
+  }
+}
